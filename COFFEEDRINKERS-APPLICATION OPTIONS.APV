@@ -514,8 +514,13 @@ WHEN  ('UpdateSuppliers_CoffeeDrinkers.clw') (1)
 %ABCVersion DEFAULT  ('10000')
 [PERSIST]
 %SaveCreateLocalMap DEFAULT  ('1')
-%GenerationCompleted DEPEND %Module DEFAULT TIMES 1
+%GenerationCompleted DEPEND %Module DEFAULT TIMES 6
+WHEN  ('BrowseControl_CoffeeDrinkers.clw') ('1')
+WHEN  ('BrowseSuppliers_CoffeeDrinkers.clw') ('1')
 WHEN  ('CoffeeDrinkers.clw') ('1')
+WHEN  ('Main_CoffeeDrinkers.clw') ('1')
+WHEN  ('UpdateControl_CoffeeDrinkers.clw') ('1')
+WHEN  ('UpdateSuppliers_CoffeeDrinkers.clw') ('1')
 
 %LastTarget32 DEFAULT  ('1')
 %LastProgramExtension DEFAULT  ('EXE')
@@ -524,8 +529,6 @@ WHEN  ('CoffeeDrinkers.clw') ('1')
 [PROJECT]
 #system win32 exe
 #model clarion dll
-#pragma define(_ABCDllMode_=>0) -- GENERATED
-#pragma define(_ABCLinkMode_=>1) -- GENERATED
 #compile "CoffeeDrinkers.clw" -- GENERATED
 #compile "BrowseControl_CoffeeDrinkers.clw" -- GENERATED
 #compile "BrowseSuppliers_CoffeeDrinkers.clw" -- GENERATED
