@@ -1734,9 +1734,21 @@ WHEN  ('Default') (0)
 QuickWindow WINDOW('Browse the Suppliers file'),AT(,,358,180),FONT('Microsoft Sans Serif', |
           8,,FONT:regular,CHARSET:DEFAULT),RESIZE,CENTER,GRAY,IMM,MDI,HLP('BrowseSuppliers'), |
           SYSTEM
-          LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID5~C(0)@n-14@' & |
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+          LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID4~C(0)@n-14@' & |
+            '80L(2)|M~Name2~@s50@80L(2)|M~email~@s150@64L(2)|M~Phone~@P(###) ###-####P@' & |
+            '80L(2)|M~website~@s249@'),FROM(Queue:Browse:1),IMM,MSG('Browsing the Suppliers file'), |
+=======
+>>>>>>> dee6988225081125fad3d370f2140c3d7cd0de32
+=======
+=======
+>>>>>>> parent of 558dd27... ID 3->4
+          LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID3~C(0)@n-14@' & |
             '80L(2)|M~Name~@s50@80L(2)|M~email~@s150@64L(2)|M~Phone~@P(###) ###-####P@8' & |
             '0L(2)|M~website~@s249@'),FROM(Queue:Browse:1),IMM,MSG('Browsing the Suppliers file'), |
+>>>>>>> parent of 558dd27... ID 3->4
             #FIELDS(Sup:ID,Sup:Name,Sup:email,Sup:Phone,Sup:website),#ORIG(?List),#SEQ(1), |
             #ORDINAL(1)
           BUTTON('&View'),AT(142,176,49,14),USE(?View:2),LEFT,ICON('WAVIEW.ICO'),FLAT,HIDE, |
