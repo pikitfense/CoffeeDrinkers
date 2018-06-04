@@ -1581,12 +1581,15 @@ QuickWindow WINDOW('Browse the Suppliers file'),AT(,,358,180),FONT('Microsoft Sa
           SYSTEM
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID4~C(0)@n-14@' & |
             '80L(2)|M~Name2~@s50@80L(2)|M~email~@s150@64L(2)|M~Phone~@P(###) ###-####P@' & |
             '80L(2)|M~website~@s249@'),FROM(Queue:Browse:1),IMM,MSG('Browsing the Suppliers file'), |
 =======
 >>>>>>> dee6988225081125fad3d370f2140c3d7cd0de32
 =======
+=======
+>>>>>>> parent of 558dd27... ID 3->4
           LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID3~C(0)@n-14@' & |
             '80L(2)|M~Name~@s50@80L(2)|M~email~@s150@64L(2)|M~Phone~@P(###) ###-####P@8' & |
             '0L(2)|M~website~@s249@'),FROM(Queue:Browse:1),IMM,MSG('Browsing the Suppliers file'), |
