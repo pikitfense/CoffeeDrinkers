@@ -1579,7 +1579,7 @@ WHEN  ('Default') (0)
 QuickWindow WINDOW('Browse the Suppliers file'),AT(,,358,180),FONT('Microsoft Sans Serif', |
           8,,FONT:regular,CHARSET:DEFAULT),RESIZE,CENTER,GRAY,IMM,MDI,HLP('BrowseSuppliers'), |
           SYSTEM
-          LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID3~C(0)@n-14@' & |
+          LIST,AT(8,30,342,142),USE(?Browse:1),HVSCROLL,FORMAT('64R(2)|M~ID4~C(0)@n-14@' & |
             '80L(2)|M~Name~@s50@80L(2)|M~email~@s150@64L(2)|M~Phone~@P(###) ###-####P@8' & |
             '0L(2)|M~website~@s249@'),FROM(Queue:Browse:1),IMM,MSG('Browsing the Suppliers file'), |
             #FIELDS(Sup:ID,Sup:Name,Sup:email,Sup:Phone,Sup:website),#ORIG(?List),#SEQ(1), |

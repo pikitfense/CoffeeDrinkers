@@ -32,13 +32,7 @@ WHEN  ('RelationManager:Control') ('')
 WHEN  ('RelationManager:Suppliers') ('')
 WHEN  ('Translator') ('')
 
-%ClassLines DEPEND %ClassItem MULTI DEFAULT TIMES 4
-WHEN  ('FileManager:Control') ('Init {19}PROCEDURE(),DERIVED', 'Kill {19}PROCEDURE(),DERIVED', |
-  'UseFile {16}PROCEDURE(BYTE UseType = UseType:Uses),BYTE,PROC,DERIVED')
-WHEN  ('FileManager:Suppliers') ('Init {19}PROCEDURE(),DERIVED', 'Kill {19}PROCEDURE(),DERIVED', |
-  'UseFile {16}PROCEDURE(BYTE UseType = UseType:Uses),BYTE,PROC,DERIVED')
-WHEN  ('RelationManager:Control') ('Init {19}PROCEDURE', 'Kill {19}PROCEDURE(),DERIVED')
-WHEN  ('RelationManager:Suppliers') ('Init {19}PROCEDURE', 'Kill {19}PROCEDURE(),DERIVED')
+%ClassLines DEPEND %ClassItem MULTI DEFAULT TIMES 0
 
 %ExternalSource DEFAULT  ('Statically Linked Library (LIB)')
 %ProgramAuthor DEFAULT  ('')
@@ -441,12 +435,12 @@ WHEN  ('Suppliers') (0)
 
 %StandardExternalModule DEPEND %Module LONG TIMES 7
 WHEN  ('') (1)
+WHEN  ('BrowseControl_CoffeeDrinkers.clw') (1)
+WHEN  ('BrowseSuppliers_CoffeeDrinkers.clw') (1)
 WHEN  ('CoffeeDrinkers.clw') (1)
-WHEN  ('CoffeeDrinkers001.clw') (1)
-WHEN  ('CoffeeDrinkers002.clw') (1)
-WHEN  ('CoffeeDrinkers003.clw') (1)
-WHEN  ('CoffeeDrinkers004.clw') (1)
-WHEN  ('CoffeeDrinkers005.clw') (1)
+WHEN  ('Main_CoffeeDrinkers.clw') (1)
+WHEN  ('UpdateControl_CoffeeDrinkers.clw') (1)
+WHEN  ('UpdateSuppliers_CoffeeDrinkers.clw') (1)
 
 %NoGenerateGlobals LONG  (0)
 %WindowManagerType DEFAULT  ('WindowManager')
@@ -521,12 +515,12 @@ WHEN  ('CoffeeDrinkers005.clw') (1)
 [PERSIST]
 %SaveCreateLocalMap DEFAULT  ('1')
 %GenerationCompleted DEPEND %Module DEFAULT TIMES 6
+WHEN  ('BrowseControl_CoffeeDrinkers.clw') ('1')
+WHEN  ('BrowseSuppliers_CoffeeDrinkers.clw') ('1')
 WHEN  ('CoffeeDrinkers.clw') ('1')
-WHEN  ('CoffeeDrinkers001.clw') ('1')
-WHEN  ('CoffeeDrinkers002.clw') ('1')
-WHEN  ('CoffeeDrinkers003.clw') ('1')
-WHEN  ('CoffeeDrinkers004.clw') ('1')
-WHEN  ('CoffeeDrinkers005.clw') ('1')
+WHEN  ('Main_CoffeeDrinkers.clw') ('1')
+WHEN  ('UpdateControl_CoffeeDrinkers.clw') ('1')
+WHEN  ('UpdateSuppliers_CoffeeDrinkers.clw') ('1')
 
 %LastTarget32 DEFAULT  ('1')
 %LastProgramExtension DEFAULT  ('EXE')
@@ -538,11 +532,11 @@ WHEN  ('CoffeeDrinkers005.clw') ('1')
 #pragma define(_ABCDllMode_=>0) -- GENERATED
 #pragma define(_ABCLinkMode_=>1) -- GENERATED
 #compile "CoffeeDrinkers.clw" -- GENERATED
-#compile "CoffeeDrinkers001.clw" -- GENERATED
-#compile "CoffeeDrinkers002.clw" -- GENERATED
-#compile "CoffeeDrinkers003.clw" -- GENERATED
-#compile "CoffeeDrinkers004.clw" -- GENERATED
-#compile "CoffeeDrinkers005.clw" -- GENERATED
+#compile "BrowseControl_CoffeeDrinkers.clw" -- GENERATED
+#compile "BrowseSuppliers_CoffeeDrinkers.clw" -- GENERATED
+#compile "Main_CoffeeDrinkers.clw" -- GENERATED
+#compile "UpdateControl_CoffeeDrinkers.clw" -- GENERATED
+#compile "UpdateSuppliers_CoffeeDrinkers.clw" -- GENERATED
 #compile "CoffeeDrinkers_BC0.CLW" -- GENERATED
 #compile "COFFEEDRINKERS_BC.CLW" -- GENERATED
 #pragma link("C%V%tps%X%%L%.lib") -- GENERATED
